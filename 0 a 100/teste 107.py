@@ -1,0 +1,13 @@
+def fatorial(n, show=False):
+    f = 1
+    for c in range(n, 0, -1):
+        f *= c
+        if show == True:
+            if c == 1:
+                print(f'{c} = ', end='')
+            else:
+                print(f'{c} x ', end='')
+    return f
+
+
+print(fatorial(5, True))
